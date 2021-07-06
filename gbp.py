@@ -6,13 +6,6 @@
 	---------------------------------------------------------------------------
 	A script for creating a basic blender plugin from a template, with basic
 	info filled into the docstrings of the file.
-	---------------------------------------------------------------------------
-	License
-	* All rights reserved, 2021.
-	* No liability expressed or implied on the original creator's part.
-	* Don't misrepresent your relationship with the originl developer.
-	* Please do not fork and remove the original developers name.
-	* That's all, have fun.
 	===========================================================================
 """
 
