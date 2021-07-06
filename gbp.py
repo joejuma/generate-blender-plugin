@@ -19,8 +19,6 @@
 # Dependencies
 import signal
 import sys
-import re
-from string import Template # Template strings baby!
 
 # Functions
 def readFile( path ):
@@ -47,20 +45,16 @@ def displayOptions( options ):
 		print(v['id'],"\n",v['description'],"\n")
 	return
 	
-def parseCSVString( csvString ):
-	""" Parse a list of csv strings into a list """
-	return csvString.split(",")
-	
 def handleSIGINT( sig, context ):
 	""" Handles an interrupt signal (SIGNIT) """
 	print("\nCtrl+C pressed, exiting...")
 	sys.exit(0)
-	return	# Will this even...execute? Well, just keeping it here in-case.
+	return
 	
 	
 # Constants
 operatorOptions = [
-	{'id':"REGISTER",'description':"Register the addon. Automatically added."},
+	{'id':"REGISTER",'description':"Register the addon. Always start with this!"},
 	{'id':"UNDO",'description':"Allows for you to undo the operator"},
 	{'id':"UNDO_GROUPED",'description':"Allows you to do a single undo to effect many executions of this operator"},
 	{'id':"BLOCKING",'description':"Operation blocking! It s tops anything else from using the cursor until it's done."},
