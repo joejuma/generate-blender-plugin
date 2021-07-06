@@ -1,0 +1,63 @@
+"""
+	<%PLUGIN_NAME%>
+	By <%AUTHOR%>
+	<%REPO_URL%>
+	---------------------------------------------------------------------------
+	<%PLUGIN_SUMMARY%>
+	===========================================================================
+"""
+
+# Plugin Information
+bl_info = {
+	"name": "<%BL_PLUGIN_NAME%>",
+	"blender": (2, 80, 0),
+	"category": "<%BL_CATEGORY%>"
+}
+
+# Dependencies
+import bpy
+import bmesh
+
+# Functions
+# ...
+
+# Classes
+# ...
+
+# Plugin Class
+class <%PLUGIN_CLASS_NAME%>():
+	"""
+		Blender Plugin
+		-----------------------------------------------------------------------
+		Description of this plugin's behavior.
+		=======================================================================
+	"""
+	
+	# Elements
+	bl_idname = "<%BL_PLUGIN_ID_NAME%>"
+	bl_label = "<%BL_PLUGIN_LABEL%>"
+	bl_options = {<%BL_OPTIONS%>}
+	
+	# Methods
+	def execute(self,context):
+		"""
+			<%PLUGIN_EXECUTE_DESCRIPTION%>
+		"""
+		return
+	
+# Plugin Registration
+def register():
+	""" Registers all the plugin classes """
+	bpy.utils.register_class(<%PLUGIN_CLASS_NAME%>)
+	print("<%PLUGIN_NAME%> registered!")
+	return
+
+def unregister():
+	""" Unregisters plugin classes """
+	bpy.utils.unregister_class(<%PLUGIN_CLASS_NAME%>)
+	print("<%PLUGIN_NAME%> unregistered!")
+	return
+	
+# Main
+if __name__ == "__main__":
+	register()
