@@ -1,7 +1,7 @@
 """
 	Generate Blender Plugin Base
-	v0.0.1
-	For Blender 2.80.75 - 2.93.1
+	v2.0.0
+	For Blender v3.0.0+
 	By Joseph Juma
 	---------------------------------------------------------------------------
 	A script for creating a basic blender plugin from a template, with basic
